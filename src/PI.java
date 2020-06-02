@@ -2,8 +2,8 @@ public class PI {
     public static void main(String[] args) {
 
         int N=10000;
-        float Rtg_x = 10, Rtg_y = 10;
-        float r = Rtg_x/2;
+        float Rtg = 10;
+        float r = Rtg/2;
 
         float Circle_c = 0;
 
@@ -18,6 +18,7 @@ public class PI {
                 Circle_c++;
 
             float pi = 4 * Circle_c / (float) N;
+
             float RecordDiff = (float) Math.abs(Math.PI - RecordPI);
             float diff = (float) Math.abs(Math.PI - pi);
             if (diff < RecordDiff) {
